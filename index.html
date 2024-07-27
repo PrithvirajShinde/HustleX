@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    <main>
+        <section id="validation-section">
+            <div id="verification"> 
+            <h2>Verify Your Certification</h2> 
+            </div>
+            <input type="text" id="certification-number" placeholder="Enter your certificate no.">
+            <button id="verify-button" onclick="verifyCertification()">Verify</button>
+            <div id="student-information" style="display:none;">
+                <h3>Student Information</h3>
+                <table>
+                    <tr>
+                        <td>Student Name</td>
+                        <td id="student-name"></td>
+                    </tr>
+                    <tr>
+                        <td>Course Name</td>
+                        <td id="course-name"></td>
+                    </tr>
+                    <tr>
+                        <td>Date Of Issue</td>
+                        <td id="date-of-issue"></td>
+                    </tr>
+                    <tr>
+                        <td>Date Of Completion</td>
+                        <td id="date-of-completion"></td>
+                    </tr>
+                    <tr>
+                        <td>Student Email</td>
+                        <td id="student-email"></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+    <div id="footer-placeholder"></div>
+    <script src="script.js"></script>
+    <script>
+        // Load header dynamically
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                const style = document.createElement('link');
+                style.rel = 'stylesheet';
+                style.href = 'header.css';
+                document.head.appendChild(style);
+            });
+
+        // Load footer dynamically
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+                const style = document.createElement('link');
+                style.rel = 'stylesheet';
+                style.href = 'footer.css';
+                document.head.appendChild(style);
+            });
+        </script>
+    <script src="script.js"></script>
+</body>
+</html>

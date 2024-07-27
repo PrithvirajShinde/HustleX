@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E8ECFF;
+    font-family: Arial, sans-serif;
+}
+/* Footer */
+/* Base styles */
+.footer-sec {
+    background-color: white;
+    padding: 50px 20px;
+    border-radius: 15px;
+    color: black;
+    text-align:left;
+    margin-left: 5%;
+    max-width: 90%;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.title {
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600px;
+    font-style: bold;
+}
+
+.footer-col {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 120px; /* Adjust spacing between columns */
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.f-col {
+    flex: 1; /* Ensure equal width for columns */
+    max-width: 300px; /* Limit maximum width of columns */
+}
+
+.footer-col .f-col ul {
+    padding-left: 0;
+}
+
+.footer-col .f-col ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-col .f-col ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-sec2 {
+    background-color: white;
+    padding: 50px 20px;
+    border-radius: 15px;
+    color: black;
+    text-align:left;
+    margin-left: 5%;
+    max-width: 90%;
+    margin-top: 3vh;
+    padding: 20px;
+    height: 25vh;
+}
+.social-one {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 1vh;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500px;
+}
+.social-two {
+    gap: 50px;
+    margin-top: 1vh;
+}
+.footer-contact {
+    width: 80%;
+    margin-left: 10%;
+    height: 45px;
+    background-color: #2A2E77;
+    border-radius: 15px;
+}
+.footer-contact a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin: 0 10px;
+}
+.footer-strip {
+    font-display:inline;
+    margin-left: 5%;
+    font-size: 18px;
+    padding-bottom: 40px;
+}

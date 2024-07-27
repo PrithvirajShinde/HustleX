@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+#validation-section {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 50%;
+}
+
+#validation-section input
+{
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%;
+}
+#validation-section button {
+    background-color:#424242 ;
+    color: #FFFCFC;
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%;
+    display: inline-block; 
+}
+    
+
+
+#validation-section h2 {
+    background-color: #30314D;
+    color: #FFFCFC;
+    border: 2px solid #FFFCFC; 
+    padding: 10px;
+    border-radius: 5px; 
+    display: inline-block; 
+}
+
+#student-information {
+    margin-top: 20px;
+}
+
+#student-information table {
+    margin: 0 auto;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+#student-information table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+footer {
+    
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#social-media a,
+#policy a {
+    color: #ddd;
+    margin: 0 10px;
+    text-decoration: none;
+}
