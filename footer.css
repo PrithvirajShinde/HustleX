@@ -1,107 +1,237 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
-    background-color: #E8ECFF;
-    font-family: Arial, sans-serif;
-}
-/* Footer */
-/* Base styles */
-.footer-sec {
-    background-color: white;
-    padding: 50px 20px;
-    border-radius: 15px;
-    color: black;
-    text-align:left;
-    margin-left: 5%;
-    max-width: 90%;
-    margin-top: 50px;
-    padding: 20px;
-}
-
-.title {
-    font-size: 25px;
     font-family: "Poppins", sans-serif;
-    font-weight: 600px;
-    font-style: bold;
+    margin: 0;
+    padding: 0;
+    background-color: #E8ECFF;
+    color: #333;
+    overflow-x: hidden;
 }
 
-.footer-col {
+
+/* Footer CSS */
+footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.3);
+    margin: 10px auto; 
+    width: 90%; 
+    border: 1.1px solid #000000;
+}
+
+.footer-content {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 120px; /* Adjust spacing between columns */
-    margin-left: 100px;
-    margin-top: 20px;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.f-col {
-    flex: 1; /* Ensure equal width for columns */
-    max-width: 300px; /* Limit maximum width of columns */
+.footer-section ul li a {
+    text-decoration: none; 
+    color: inherit; 
+    position: relative; 
 }
 
-.footer-col .f-col ul {
-    padding-left: 0;
+.footer-section ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; 
+    width: 100%;
+    height: 2px; 
+    border-bottom: 2px dotted currentColor;
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out; 
 }
 
-.footer-col .f-col ul li {
+.footer-section ul li a:hover::after {
+    opacity: 1;
+    
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    color: #292a49;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer-section ul {
     list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+}
+
+.footer-social {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.3);
+    margin: 16px auto;
+    text-align: center;
+    width: 90%; 
+    border: 1px solid #000000;
+}
+.footer-social .social-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 10px;
 }
 
-.footer-col .f-col ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    font-family: "Poppins", sans-serif;
+.footer-social .social-header h3 {
+    font-size: 24px;
+    color: #292a49;
+    font-weight: 400;
+    margin-right: 10px;
 }
 
-.footer-sec2 {
-    background-color: white;
-    padding: 50px 20px;
-    border-radius: 15px;
-    color: black;
-    text-align:left;
-    margin-left: 5%;
-    max-width: 90%;
-    margin-top: 3vh;
-    padding: 20px;
-    height: 25vh;
+.footer-social .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; 
+    margin: 20px 0; 
 }
-.social-one {
-    text-align: center;
-    font-size: 25px;
-    margin-bottom: 1vh;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500px;
+
+.footer-social .social-icons a img {
+    width: 32px; 
+    height: 32px;
+    transition: transform 0.3s ease, filter 0.3s ease; 
 }
-.social-two {
-    gap: 50px;
-    margin-top: 1vh;
+
+.footer-social .social-icons a:hover img {
+    transform: scale(1.1); 
+    filter: brightness(1.2); 
 }
-.footer-contact {
-    width: 80%;
-    margin-left: 10%;
-    height: 45px;
-    background-color: #2A2E77;
-    border-radius: 15px;
+.footer-social .button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15%; 
+    margin-top: 10px;
 }
-.footer-contact a {
+
+.footer-social .Contact,
+.footer-social .Validation {
+    padding: 10px 20px;
+    background-color: #323790;
+    color: #fff;
+    border: none;
+    border-radius: 11px;
+    cursor: pointer;
+    font-size: 17px;
+    width: 330px;
+    flex: none; 
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #999;
+    padding: 10px 0;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.footer-bottom .left,
+.footer-bottom .right {
+    flex: 1;
+}
+
+.footer-bottom .right {
+    text-align: right;
+}
+
+.footer-bottom a {
+    color: #2a2e77;
     text-decoration: none;
-    color: white;
-    font-size: 18px;
-    margin: 0 10px;
+    margin: 0 5px;
 }
-.footer-strip {
-    font-display:inline;
-    margin-left: 5%;
-    font-size: 18px;
-    padding-bottom: 40px;
+
+
+@media (max-width: 768px) {
+    
+    .footer-social .social-icons {
+    gap: 10px; 
+}
+
+.footer-social .social-icons a img {
+    width: 28px; 
+    height: 28px;
+}
+
+.footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-bottom .left,
+.footer-bottom .right {
+    flex: none;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-bottom .right {
+    margin-top: 5px;
+}
+}
+
+@media (max-width: 480px) {
+    footer .footer-content {
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-social .button-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-social .Contact, 
+.footer-social .Validation {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.footer-social .social-icons {
+    flex-direction: column;
+    gap: 5px;
+}
+.footer-social .social-icons {
+    flex-direction: row; 
+    justify-content: space-between;
+    width: 100%; 
+}
+
+.footer-social .social-icons a img {
+    width: 24px; 
+    height: 24px;
+}
+
+.footer-bottom {
+    font-size: 10px;
+    padding: 5px 0;
+}
+
+.footer-bottom .right {
+    margin-top: 3px;
+}
 }

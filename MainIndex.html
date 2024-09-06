@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hustle up</title>
+    <link rel="stylesheet" href="Style.css">
+    <!-- <link rel="stylesheet" href="new.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+<section class ="MySection">
+   <h2>SUPPORT</h2> 
+</section>
+    <section class="support-section">
+        
+        <h1>~ We are here for your Support ~</h1>
+        <p class="support-text"> For any Query related to XEROships, tech related support and more, feel free to call us at the following given helpline numbers...</p>
+    </section> 
+    <br>
+    <section>
+        <div class="contact-info">
+            <div class="map-placeholder">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118886.51983219062!2d75.24987201345083!3d19.8567665673214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb9815a369bc63%3A0x712d538b29a2a73e!2sChhatrapati%20Sambhajinagar%20(Aurangabad)%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1725450197860!5m2!1sen!2sin" 
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe> 
+            </div>
+            <div class="contact-card">
+                <p><strong>Contact Us:</strong> 8988389****</p>
+                <p><strong>Request for Call Back:</strong> <a href="#">Send Request</a></p>
+                <p><strong>Helpline Contact No:</strong></p>
+                <ul>
+                    <li>+91 788790****</li>
+                    <li>+91 988706****</li>
+                </ul>
+                <p><strong>Email ID:</strong> <a href="mailto:hustler.xero@gmail.com">hustler.xero@gmail.com</a></p>
+                <p><strong>Foundation Place:</strong> Chhatrapati Sambhajinagar 431001</p>
+                <p><strong>CEO:</strong> Harsh Bhamare</p>
+            </div>
+        </div>
+    </section>
+    
+    <br>
+
+<div id="footer-placeholder"></div>
+
+
+
+<script>
+    // Load header dynamically
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-placeholder').innerHTML = data;
+            const style = document.createElement('link');
+            style.rel = 'stylesheet';
+            style.href = 'header.css';
+            document.head.appendChild(style);
+        });
+
+    // Load footer dynamically
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+            const style = document.createElement('link');
+            style.rel = 'stylesheet';
+            style.href = 'footer.css';
+            document.head.appendChild(style);
+        });
+    </script>
+
+<script src="script.js"></script>
+</body>
+</html>

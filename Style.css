@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+body {
+    font-family: popins , ;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.auth-buttons .login,
+.auth-buttons .signup {
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.auth-buttons .login {
+    background-color: #555;
+    color: white;
+}
+
+.auth-buttons .signup {
+    background-color: #007bff;
+    color: white;
+}
+.MySection {
+    background-color: #fcfcfd;
+    color: black;
+        text-align:center;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 8px;
+        border: 1px;
+        justify-content: center;
+        margin: 0;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.3);
+        max-width: 30%;
+        margin: 15px auto;
+        height: auto;
+        position: relative;
+
+}
+
+
+.MySection h1{
+    text-align:center;  
+}
+
+.support-section {
+    background-color: #31324E;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align:center;
+    /* width: 80%;
+    max-width: 600px; */
+}
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    gap: 2rem;
+}
+
+.map-placeholder {
+    flex: 1;
+    max-width: 50%;
+}
+
+.map-placeholder iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+.contact-card {
+    flex: 1;
+    background-color: #FDFAFA;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 50%;
+}
+
+.contact-card p, .contact-card ul {
+    margin: 0.5rem 0;
+}
+
+.contact-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-card ul li {
+    margin-bottom: 0.5rem;
+}
+
+.contact-card a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
